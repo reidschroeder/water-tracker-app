@@ -29,7 +29,7 @@ if day_index < len(DAYS):
     if st.button("Submit"):
         st.session_state.intake[day] = cups
         st.session_state.current_day_index += 1
-        st.experimental_rerun()
+        st.rerun()
 else:
     st.success("✅ You’ve entered all days of the week!")
 
